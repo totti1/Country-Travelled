@@ -23,7 +23,8 @@ Code/text editor
 Terminal
 
 ## Setup
-### Run git clone https://github.com/totti1/Country-Travelled.git
+### Download the project on your local machine
+run `git clone https://github.com/totti1/Country-Travelled.git`
 
 or download the zip file from github.
 
