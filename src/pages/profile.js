@@ -1,9 +1,9 @@
 import React from 'react';
-const Single = () => {
+const Profile = () => {
 return(
         <div>
             <h1>Single Country Page</h1>
         </div>
     );
 }
-export default Single;
+export default Profile;

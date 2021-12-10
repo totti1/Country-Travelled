@@ -1,4 +1,4 @@
 import Home from "./home";
-import Single from "./single_country";
+import Profile from "./profile";
 
-export {Home, Single}
+export {Home, Profile}

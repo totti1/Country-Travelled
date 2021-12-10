@@ -4,11 +4,11 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { Button, CardActionArea, CardActions, IconButton } from '@mui/material';
+import { CardActionArea, CardActions, IconButton } from '@mui/material';
 
  const ImageIconCard = props => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ minWidth: 250 }}>
       <CardActionArea>
         <CardMedia
           component="img"

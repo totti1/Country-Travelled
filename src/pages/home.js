@@ -1,7 +1,5 @@
 import React, { useState, useEffect }  from 'react';
-import { ImageIconCard } from '../components/cards';
-
-
+import { ImageIconCard, ToggleDrawer } from '../components';
 
 const Home = () => {
     const [error, setError] = useState(null);
@@ -28,15 +26,21 @@ const Home = () => {
     } else {
         return (
             <div>
-                {countries.map(item => (
-                    <div>
-                        <ImageIconCard cardImg={item.flags.png}
+                <ToggleDrawer>
+                    <div class="row">
+                        {countries.map(item => (
+                                <div class="col">
+                                    <ImageIconCard 
+                                        cardImg={item.flags.png}
                                         imgAlt={item.name.common}
                                         countryName={item.name.official}
                                         population={item.population}
-                                        capital={item.capital} />
+                                        capital={item.capital}
+                                    />
+                            </div>
+                        ))}
                     </div>
-                ))}
+                </ToggleDrawer>
             </div>
         );
     }
