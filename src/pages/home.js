@@ -1,5 +1,5 @@
 import React, { useState, useEffect }  from 'react';
-import { ImageIconCard, ToggleDrawer } from '../components';
+import { ImageIconCard, ToggleDrawer, SearchInputIcon, SelectInput } from '../components';
 
 const Home = () => {
     const [error, setError] = useState(null);
@@ -27,6 +27,16 @@ const Home = () => {
         return (
             <div>
                 <ToggleDrawer>
+
+                    <div class="row">
+                        <div class="col">
+                            <SearchInputIcon />
+                        </div>
+                        <div class="col">
+                            <SelectInput />
+                        </div>
+                    </div>
+                    
                     <div class="row">
                         {countries.map(item => (
                                 <div class="col">
